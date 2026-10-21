@@ -94,3 +94,20 @@
 .dialog-nav button{padding:13px 19px;border-radius:999px}
 @media(max-width:900px){.approach-intro,.dialog-heading{grid-template-columns:1fr;gap:28px}.process-grid{grid-template-columns:1fr 1fr}.process-grid article:nth-child(2){border-right:0}.dialog-content{padding-top:45px}.dialog-story{grid-template-columns:1fr}.dialog-visual img{max-height:none}}
 @media(max-width:560px){.project-section{padding-top:20px}.rail-heading{align-items:center}.rail-heading h2{font-size:34px}.rail-controls{display:none}.project-card{flex-basis:86vw}.project-card>img{height:220px}.approach-section{padding:70px 0}.approach-intro h2{font-size:43px}.process-grid{grid-template-columns:1fr}.process-grid article{border-right:0;border-bottom:1px solid var(--line);min-height:auto}.dialog-content{width:min(100% - 24px,1180px);padding-top:30px}.dialog-heading h2{font-size:43px}.dialog-facts{grid-template-columns:1fr}.dialog-facts div{border-right:0}.dialog-facts div:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.dialog-facts div:last-child{border-bottom:0}.dialog-story section{padding:25px}.dialog-nav button{font-size:12px;padding:11px 13px}}
+
+/* Alignements de la navigation et de l'introduction */
+@media(min-width:901px){
+  .nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+  .nav .links{margin-left:0;align-items:center}
+  .nav .links>a:not(.contact){display:flex;align-items:center;height:42px}
+  .nav-contact{justify-self:end}
+  .mobile-contact{display:none}
+}
+.approach-intro{align-items:end}
+.approach-copy p:last-child{margin-bottom:0}
+.footer .btn{color:var(--ink)}
+@media(max-width:900px){
+  .nav-contact{display:none}
+  .mobile-contact{display:block}
+  .approach-intro{align-items:start}
+}
